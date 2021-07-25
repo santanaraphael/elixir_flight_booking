@@ -26,7 +26,8 @@ defmodule Flightex.MixProject do
       {:decimal, "~> 2.0"},
       {:ex_machina, "~> 2.5.0"},
       {:elixir_uuid, "~> 1.2"},
-      {:json_response, git: "https://github.com/joaopealves/json_response"}
+      {:json_response, git: "https://github.com/joaopealves/json_response"},
+      {:uuid, "~> 1.1"}
     ]
   end
 
