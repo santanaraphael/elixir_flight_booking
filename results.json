@@ -13,37 +13,23 @@
     {
       "describe": "build/4",
       "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/users/users_test.exs",
-      "line": 19,
-      "module": "Elixir.Flightex.Users.UserTest",
-      "test": "test build/4 when cpf is a integer"
-    },
-    {
-      "describe": "build/4",
-      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/users/users_test.exs",
       "line": 9,
       "module": "Elixir.Flightex.Users.UserTest",
       "test": "test build/4 when all params are valid, returns the user"
     },
     {
-      "describe": "call/1",
-      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/bookings/create_or_update_test.exs",
-      "line": 17,
-      "module": "Elixir.Flightex.Bookings.CreateOrUpdateTest",
-      "test": "test call/1 when all params are valid, returns a valid tuple"
+      "describe": "build/4",
+      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/users/users_test.exs",
+      "line": 19,
+      "module": "Elixir.Flightex.Users.UserTest",
+      "test": "test build/4 when cpf is a integer"
     },
     {
-      "describe": "get/1",
-      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/users/user_agent_test.exs",
-      "line": 52,
-      "module": "Elixir.Flightex.Users.AgentTest",
-      "test": "test get/1 when the user isn't found, returns an error"
-    },
-    {
-      "describe": "get/1",
-      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/users/user_agent_test.exs",
-      "line": 40,
-      "module": "Elixir.Flightex.Users.AgentTest",
-      "test": "test get/1 when the user is found, returns the user"
+      "describe": "generate/1",
+      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/bookings/report_test.exs",
+      "line": 14,
+      "module": "Elixir.Flightex.Bookings.ReportTest",
+      "test": "test generate/1 when called, return the content"
     },
     {
       "describe": "save/1",
@@ -54,17 +40,24 @@
     },
     {
       "describe": "get/1",
-      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/bookings/booking_agent_test.exs",
-      "line": 51,
-      "module": "Elixir.Flightex.Bookings.AgentTest",
-      "test": "test get/1 when the user wasn't found, returns an error"
+      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/users/user_agent_test.exs",
+      "line": 40,
+      "module": "Elixir.Flightex.Users.AgentTest",
+      "test": "test get/1 when the user is found, returns the user"
     },
     {
       "describe": "get/1",
-      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/bookings/booking_agent_test.exs",
-      "line": 31,
-      "module": "Elixir.Flightex.Bookings.AgentTest",
-      "test": "test get/1 when the booking is found, return it"
+      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/users/user_agent_test.exs",
+      "line": 52,
+      "module": "Elixir.Flightex.Users.AgentTest",
+      "test": "test get/1 when the user isn't found, returns an error"
+    },
+    {
+      "describe": "call/1",
+      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/bookings/create_or_update_test.exs",
+      "line": 17,
+      "module": "Elixir.Flightex.Bookings.CreateOrUpdateTest",
+      "test": "test call/1 when all params are valid, returns a valid tuple"
     },
     {
       "describe": "save/1",
@@ -74,11 +67,18 @@
       "test": "test save/1 when the param are valid, return the saved booking"
     },
     {
-      "describe": "call/1",
-      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/users/create_or_update_test.exs",
-      "line": 27,
-      "module": "Elixir.Flightex.Users.CreateOrUpdateTest",
-      "test": "test call/1 when cpf is a integer, returns an error"
+      "describe": "get/1",
+      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/bookings/booking_agent_test.exs",
+      "line": 31,
+      "module": "Elixir.Flightex.Bookings.AgentTest",
+      "test": "test get/1 when the booking is found, return it"
+    },
+    {
+      "describe": "get/1",
+      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/bookings/booking_agent_test.exs",
+      "line": 51,
+      "module": "Elixir.Flightex.Bookings.AgentTest",
+      "test": "test get/1 when the user wasn't found, returns an error"
     },
     {
       "describe": "call/1",
@@ -86,6 +86,13 @@
       "line": 15,
       "module": "Elixir.Flightex.Users.CreateOrUpdateTest",
       "test": "test call/1 when all params are valid, return a tuple"
+    },
+    {
+      "describe": "call/1",
+      "file": "/home/raphael/projects/learning/ignite/elixir/elixir_flight_booking/test/users/create_or_update_test.exs",
+      "line": 27,
+      "module": "Elixir.Flightex.Users.CreateOrUpdateTest",
+      "test": "test call/1 when cpf is a integer, returns an error"
     }
   ],
   "skiped": []

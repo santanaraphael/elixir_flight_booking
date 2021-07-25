@@ -12,6 +12,8 @@ defmodule Flightex.Bookings.Agent do
     {:ok, booking}
   end
 
+  def list_all, do: Agent.get(__MODULE__, & &1)
+
   def get(id), do: Agent.get(__MODULE__, &get_booking(&1, id))
 
   defp get_booking(state, id) do
