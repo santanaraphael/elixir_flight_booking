@@ -7,25 +7,19 @@ defmodule Flightex.Users.UserTest do
 
   describe "build/4" do
     test "when all params are valid, returns the user" do
-      {:ok, response} =
-        User.build(
-          "Jp",
-          "jp@banana.com",
-          "12345678900"
-        )
+      user_input = build(:user_input)
 
-      expected_response = build(:users, id: response.id)
+      {:ok, response} = User.build(user_input)
+
+      expected_response = build(:user, id: response.id)
 
       assert response == expected_response
     end
 
     test "when cpf is a integer" do
-      response =
-        User.build(
-          "Jp",
-          "jp@banana.com",
-          112_250_055
-        )
+      user_input = build(:user_input, cpf: 123)
+
+      response = User.build(user_input)
 
       expected_response = {:error, "Cpf must be a String"}
 
