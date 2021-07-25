@@ -8,34 +8,32 @@ defmodule Flightex.Bookings.AgentTest do
   describe "save/1" do
     setup do
       BookingsAgent.start_link(%{})
-
-      :ok
+      {:ok, id: UUID.uuid4()}
     end
 
-    test "when the param are valid, return a booking uuid" do
+    test "when the param are valid, return the saved booking", %{id: id} do
       response =
         :booking
-        |> build()
+        |> build(id: id)
         |> BookingsAgent.save()
 
-      {:ok, uuid} = response
-
-      assert response == {:ok, uuid}
+      expected_response = {:ok, build(:booking, id: id)}
+      assert response == expected_response
     end
   end
 
   describe "get/1" do
     setup do
       BookingsAgent.start_link(%{})
-
       {:ok, id: UUID.uuid4()}
     end
 
-    test "when the user is found, return a booking", %{id: id} do
-      booking = build(:booking, id: id)
-      {:ok, uuid} = BookingsAgent.save(booking)
+    test "when the booking is found, return it", %{id: id} do
+      :booking
+      |> build(id: id)
+      |> BookingsAgent.save()
 
-      response = BookingsAgent.get(uuid)
+      response = BookingsAgent.get(id)
 
       expected_response =
         {:ok,
