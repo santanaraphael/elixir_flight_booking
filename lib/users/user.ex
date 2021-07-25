@@ -3,11 +3,11 @@ defmodule Flightex.Users.User do
   @enforce_keys @keys
   defstruct @keys
 
-  def build(_name, _email, cpf) when not is_bitstring(cpf) do
+  def build(%{name: _name, email: _email, cpf: cpf}) when not is_bitstring(cpf) do
     {:error, "Cpf must be a String"}
   end
 
-  def build(name, email, cpf) do
+  def build(%{name: name, email: email, cpf: cpf}) do
     {
       :ok,
       %__MODULE__{
