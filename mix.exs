@@ -8,7 +8,18 @@ defmodule Flightex.MixProject do
       elixir: "~> 1.11",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      app: :excoveralls,
+      version: "1.0.0",
+      elixir: "~> 1.0.0",
+      deps: deps(),
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: [
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test,
+        "coveralls.html": :test
+      ]
     ]
   end
 
@@ -27,7 +38,8 @@ defmodule Flightex.MixProject do
       {:ex_machina, "~> 2.5.0"},
       {:elixir_uuid, "~> 1.2"},
       {:json_response, git: "https://github.com/joaopealves/json_response"},
-      {:uuid, "~> 1.1"}
+      {:uuid, "~> 1.1"},
+      {:excoveralls, "~> 0.10", only: :test}
     ]
   end
 
