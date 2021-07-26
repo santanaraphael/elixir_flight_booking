@@ -16,7 +16,7 @@ defmodule Flightex.Bookings.Booking do
         local_origin: local_origin,
         local_destination: local_destination,
         user_id: user_id,
-        id: UUID.uuid1()
+        id: UUID.uuid4()
       }
     }
   end
