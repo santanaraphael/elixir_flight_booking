@@ -28,5 +28,13 @@ defmodule Flightex.Bookings.CreateOrUpdateTest do
 
       assert response == expected_response
     end
+
+    test "when there are invalid params, return an error" do
+      params = build(:booking_input)
+
+      {:error, response} = CreateOrUpdate.call(params)
+
+      assert response == "User not found"
+    end
   end
 end
